@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>3 - MidJourney like a pro</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script type="text/javascript" src="js/page.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h1>Using Midjourney</h1>
+					<h4>like a pro:</h4>
+					<p>learning prompt engineering</p>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h3>Tip 1: Talk to Midjorney</h3>
+					<p>
+						Be descriptive, tell Midjourney what exactly you want to get.
+					</p>
+					<ul class="matroska-white">
+						<li>Do you need a profile or full face?</li>
+						<li>What is the mood of the picture?</li>
+						<li>Should it be sketchy or realistic,</li>
+						<li>beautiful or ugly?</li>
+						<li>... add more detail to the scene</li>
+					</ul>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<p>continuous line drawing of a group of people standing next to each other, group of people, continuous one line vector drawing, minimal,abstract, --ar 16:8</p>
+						<img class="stretch" src="img/sample_line_drawing.png" />
+					</section>
+					<section>
+						<p>print of a dutch golden age oil painting portrait of an otter wearing a ruff collar, warm lighting, chiaroscuro</p>
+						<img class="stretch" src="img/sample_otter.png" />
+					</section>
+					<section>
+						<p>letter, M L , Mobile Legends, Full color , HD , high definition, colorfull , beatiful imagem, beauty</p>
+						<img class="stretch" src="img/sample_letter.png" />
+					</section>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>
+						There are special command line arguments you can find in the Midjourney
+						<a href="https://midjourney.gitbook.io/docs/user-manual#parameters-to-imagine">official documentation</a>, e.g.:
+					</p>
+					<ul class="matroska-white">
+						<li><span class="code-entry">--ar 2:1</span> means aspect ratio 2:1</li>
+						<li><span class="code-entry">--stylize 625</span> the least artistic way of drawing (60000 for the most artistic way)</li>
+						<li>...</li>
+						<li><span class="code-entry">francis bacon::1</span> Francis Bacon's expressionist style</li>						
+					</ul>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>
+						If you don't want to remember all the commands - there's a 
+						<a href="https://prompt.noonshot.com/midjourney">cool tool</a>,
+						helping you to make a Midjourney <span class="code-entry">/imagine</span> prompt visually:
+					</p>
+					<img class="stretch" src="img/misc_prompt_tool.png" />
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<p>
+							You may use an image + text as your input:<br/>
+							<span class="code-entry">/imagine prompt &lt;source pic URI&gt; lightspeed, realistic looking</span>
+						</p>
+						<img class="stretch" src="img/sample_truck_src.jpg" />
+					</section>
+					<section>
+						<p>
+							But still be prepared for unpredictable results
+						</p>
+						<img class="stretch" src="img/sample_truck_realistic.png" />
+					</section>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<p>
+							Finally, you can mix two images in one with
+							<a href="https://medium.com/seeds-for-the-future/midjourney-does-it-again-new-feature-remix-mode-9b39bf2c7940">Remix</a>
+							<span class="code-entry">/imagine</span> prompt mode
+						</p>
+						<img src="img/sample_remix_src.png" />
+					</section>
+					<section>
+						<p>
+							You'll get this
+						</p>
+						<img src="img/sample_remix_result.png" />
+					</section>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<p>
+							Be patient: the AI does mistakes
+						</p>
+					</section>
+					<section>
+						<p>
+							<span class="code-entry">Whipped egg whites sculpture of a chicken</span>
+						</p>
+						<img class="stretch" src="img/sample_chicken_bad.png" />
+					</section>
+					<section>
+						<p>
+							... but chances are eventually it will do much better
+						</p>
+						<img class="stretch" src="img/sample_chicken_ok.png" />
+					</section>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>We're almost through</p>
+					<p>
+						but there's still a short <a href="quiz.html">quiz &gt;&gt;&gt;</a>
+						for art connoisseurs.
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			setupPage();
+		</script>
+	</body>
+</html>

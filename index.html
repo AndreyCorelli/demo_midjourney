@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>1 - MidJourney for Smarties</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script type="text/javascript" src="js/page.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<div class="grid-horizontal">
+						<div><img src="img/me.jpg" /></div>
+						<div>							
+							<p>
+								I'm Andrei Sitaev, a software developer in <span style="color:#EF8210">Sennder</span>.
+								<br/><br/>
+								I've been experimenting with Machine Learning since 2019,
+								mostly with natural language processing.<br/>
+								But recently I tried <span class="code-entry">AI image generation</span>...
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<div class="grid-table">
+						<div>
+							<img style="height:15vh" src="img/misc_dalle.jpg" />
+						</div>
+						<div><p>Dall-E</p></div>
+
+						<div>
+							<img style="height:15vh" src="img/misc_stable_diffusion.png" />
+						</div>
+						<div><p>Stable Diffusion</p></div>
+
+						<div>
+							<img style="height:15vh" src="img/misc_imagen.jpg" />
+						</div>
+						<div><p>Google Imagen</p></div>
+					</div>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h1>Midjourney</h1>
+					<h2>for those who have nothing better to do</h2>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h4>What IS Midjourney</h4>
+					<p>and what's it for?</p>
+					<img src="img/misc_hommy.jpg" />
+					<p>
+						You're tired and bored and wanna know, how would
+						<span class="code-entry">"realistic magic mushroom tattoos"</span> look like?
+					</p>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>It will take you about 10 minutes to get <b>this</b>:</p>
+					<img src="img/sample_tatoos.png" />
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>or this for <br/><span class="code-entry">Depression eating from the inside, Higly detailed, psycho, scary, 8K</span></p>
+					<img class="stretch" src="img/sample_depression.png" />
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h4>Seriously, why you might need this?</h4>
+					<ul class="matroska">
+						<li class="fade-item">You're making a demo and searching for a cool picture, but there's nothing relevant in stock,</li>
+						<li class="fade-item">You want to send your friend an unorthodox birthday card,</li>
+						<li class="fade-item">Your favorite figure skater announced a fan-art competition...</li>
+					</ul>
+				</section>
+				<!-- section>
+					<p>in case you might think I couldn't be serious:</p>
+					<img src="img/sample_trusova.png" />
+				</section -->
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>or maybe you love Ryan Gosling so much :P</p>
+					<img class="stretch" src="img/sample_ryan.png" />
+					<p>... but also think he lacks a bit of masculinity</p>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>Have I told you it would take 10 minutes to get this?</p>
+					<p>You might need even less! The steps you follow are:</p>
+					<ul class="matroska">
+						<li class="fade-item">Register in <a href="https://discord.com/">Discord</a></li>
+						<li class="fade-item">Go to the <a href="https://www.midjourney.com/">www.midjourney.com</a> website,</li>
+						<li class="fade-item">Press &lt;Join the Beta&gt; then &lt;Sign in&gt;,</li>
+						<li class="fade-item">This redirects you back to Discord where you enter the Midjourney public server.</li>
+					</ul>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>
+						Now join any of the <span class="code-entry">#newbie-NN</span> channels
+						and let Midjourney imagine for you. Type this in one line:
+					</p>
+					<pre>
+						<code>
+					/imagine prompt: attack ships on fire off the shoulder of Orion 
+					and C–beams glitter in the darkness at Tannhauser Gate,
+					cinematic color grading, ultra realistic 8k:: cyberpunk::1
+						</code>
+					</pre>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<img src="img/misc_bladeruner_2.jpg" class="big-pic" />
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>Not exactly what you've been looking for?</p>
+					<p>
+						Now let me share a couple pieces of advice on using Midjourney
+						like a pro. <br/>
+						Let's look <a href="theory.html">inside the tool &gt;&gt;&gt;</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			setupPage();
+		</script>
+	</body>
+</html>

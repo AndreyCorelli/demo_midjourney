@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>2 - Inside MidJourney</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/lite.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script type="text/javascript" src="js/page.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h2>Midjourney: under the hood</h2>
+					<p>
+						Learn the tool.
+					</p>
+					<p>
+						Go <a href="index.html">back &lt;&lt;&lt;</a>
+					</p>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->				
+					<p>
+						To drive a car you have to learn some basics about cars:
+					</p>
+					<ul class="matroska">
+						<li>A car has weels,</li>
+						<li>and an engine inside,</li>
+						<li>and it converts gasoline into miles, ...</li>
+					</ul>
+					<p>
+						The same story with Midjourney: some basic understanding of what it is will help you to get better results.
+					</p>					
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<p>Midjourney is an association of 2 ML models:</p>
+						<p>A powerful GPT-3 NLP model</p>
+						<img src="img/misc_gpt3.png" />
+					</section>
+					<section>
+						<p>Deep Convolutional Generative Adversarial Network</p>
+						<img src="img/misc_conv_adv_nn.png" />
+					</section>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<h4>GPT-3 (Generative Pre-trained Transformer)</h4>
+						<img src="img/misc_gpt3_animated.gif" />
+					</section>
+					<section>
+						<h4>1 - GPT-3 inside</h4>
+						<img src="img/misc_gpt3_animated_2.gif" />
+					</section>
+					<section>
+						<h4>2 - converting word to vector</h4>
+						<img src="img/misc_king_queen.png" />
+					</section>
+					<section>
+						<h4>3 - Transformer "Magic" inside</h4>
+						<img src="img/misc_transformer.png" />
+					</section>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<h4>Facts about GPT-3</h4>
+					<ul class="matroska">
+						<li class="fade-item">~100M neurons (~0.001 human brain size)</li>
+						<li class="fade-item">355 GPU-years to train, at ~$4.6M cost</li>
+						<li class="fade-item">Savant syndrome</li>
+					</ul>
+				</section>
+				<section>
+					<!-- - - - - - - Slide - - - - - - -->
+					<h4>GPT-3-to-human dialogs</h4>
+					<section>
+						<p>
+							show a huge leap forward from where we were a decade ago:
+						</p>
+						<img src="img/misc_chat_bad.png"/>
+					</section>
+					<section>
+						<ul class="matroska">
+							<li><b>GPT-3</b>: The hierarchy of complexity is: atoms, molecules, organisms, humans, AI, Super-AI, and God.</li>
+							<li><b>Human</b>: Is something over God?</li>
+							<li><b>GPT-3</b>: No.</li>
+							<li><b>Human</b>: And where is God?</li>
+							<li><b>GPT-3</b>: God is all there is, including the simulation we are living in.</li>
+						</ul>
+					</section>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<table>
+							<tr>
+								<td><img class="small-pic" src="img/misc_fry.png" /></td>
+								<td>Which is heavier, a mouse or a toaster?</td>
+							</tr>
+							<tr>							
+								<td>A toaster is heavier than a mouse.</td>
+								<td><img class="small-pic" src="img/misc_bender_ok.png" /></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><img class="small-pic" src="img/misc_fry.png" /></td>
+								<td>Which is heavier, a toaster or a pencil?</td>
+							</tr>
+							<tr>							
+								<td>The pencil is heavier than the toaster.</td>
+								<td><img class="small-pic" src="img/misc_bender_fail.png" /></td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<section>
+						<table>
+							<tr>
+								<td><img class="small-pic" src="img/misc_fry.png" /></td>
+								<td>Who was the President of the USA in 1801?</td>
+							</tr>
+							<tr>							
+								<td>Thomas Jefferson was the President of the United States in 1801.</td>
+								<td><img class="small-pic" src="img/misc_bender_ok.png" /></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><img class="small-pic" src="img/misc_fry.png" /></td>
+								<td>Who was the President of the USA in 1650?</td>
+							</tr>
+							<tr>							
+								<td>Richard Bennet was President of the United States in 1650.</td>
+								<td><img class="small-pic" src="img/misc_bender_fail.png" /></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td><img class="small-pic" src="img/misc_fry.png" /></td>
+								<td>How many rainbows does it take to jump from Hawaii to 17?</td>
+							</tr>
+							<tr>							
+								<td>It takes two rainbows to jump from Hawaii to 17</td>
+								<td><img class="small-pic" src="img/misc_bender_drunk.png" /></td>
+							</tr>
+						</table>
+					</section>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<div class="grid-horizontal">
+						<div><img src="img/sample_dino_cat.png" /></div>
+						<div>
+							<ul class="matroska">
+								<li>Midjourney does extremely well while combining objects or concepts,</li>
+								<li>because of the way it's built...</li>
+							</ul>
+							<p>
+								Midjourney prompt:
+								<span class="code-entry">half cat half dinosaur</span>
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<div class="grid-horizontal">
+						<div><img src="img/sample_hommy_strangles.png" /></div>
+						<div>
+							<p>
+								But it often fails to portray some <b>action</b>:<br/><br/>
+								<span class="code-entry">homer simpson strangles a raptor</span>
+							</p>
+						</div>
+					</div>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<p><span class="code-entry">guinea pig eating a man</span></p>
+					<img src="img/sample_guinea_pig_eats_man.png" />
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<p><span class="code-entry">frightened guinea pig</span></p>
+					<img src="img/sample_frightened_gp.jpg" style="width:40%; height:40%" />
+					<p>Who's frightened now?</p>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<div class="grid-horizontal">
+						<div>
+							<p>
+								Neural networks aren't too attentive to detail, 
+								they rather convey the concept...
+								<br/><br/>
+								This's supposed to be a dog with a carrot.
+							</p>
+						</div>
+						<div>
+							<img src="img/sample_dog_carrot.png" />
+						</div>						
+					</div>
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>
+						Especially they don't do well with hands
+					</p>
+					<img class="stretch" src="img/sample_hand.png" />
+				</section>
+				<section>	
+					<!-- - - - - - - Slide - - - - - - -->
+					<p>Finally: Midjourney tips & tricks</p>
+					<p>
+						We're moving to the next section: <a href="usage.html">mastering Midjourney prompt &gt;&gt;&gt;</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+			setupPage(); 
+		</script>
+	</body>
+</html>
