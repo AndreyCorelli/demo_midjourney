@@ -1,0 +1,8 @@
+.code-entry {
+	font-family: monospace, monospace;
+	color: #3030E8;
+}
+
+.matroska li:nth-child(odd) {
+	color: #555538;
+}

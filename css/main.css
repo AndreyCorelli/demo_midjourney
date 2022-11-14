@@ -1,0 +1,55 @@
+.block-middle {
+	text-align: center
+}
+
+.code-entry {
+	font-family: monospace, monospace;
+	color: #6060FF;
+}
+
+.matroska li:nth-child(odd) {
+	color: #B5C0B5;
+}
+
+img.big-pic {
+    width: 71vw;
+    height: 73vh;
+}
+
+img.small-pic {
+    width: 6 vw;
+    height: 9 vh;
+}
+
+.matroska-white li:nth-child(odd) {
+	color: #555538;
+}
+
+.fade-item {
+    transition: .2s all ease-in-out;
+    opacity: 0;
+}
+
+.fadein {
+    animation: fadeIn 0.9s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.grid-horizontal {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-table {
+   display: grid;
+   grid-template-columns: 30vw auto;
+}
